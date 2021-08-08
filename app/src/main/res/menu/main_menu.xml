@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_baseline_short_text_24"
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:icon="@drawable/ic_baseline_short_text_24"
+            android:id="@+id/nav_search"
+            android:title="Profile" />
+        <item
+            android:icon="@drawable/ic_baseline_short_text_24"
+            android:title="Free trial" />
+        <item
+            android:icon="@drawable/ic_baseline_short_text_24"
+            android:id="@+id/nav_all_categories"
+            android:title="Leaderboard" />
+        <item
+            android:icon="@drawable/ic_baseline_short_text_24"
+            android:title="Referrals and Rewards" />
+        <item
+            android:icon="@drawable/ic_baseline_short_text_24"
+            android:title="Contact Us" />
+        <item
+            android:icon="@drawable/ic_baseline_short_text_24"
+            android:title="Settings" />
+        <item
+            android:icon="@drawable/ic_baseline_short_text_24"
+            android:id="@+id/nav_add_missing_place"
+            android:title="fresh" />
+    </group>
+
+<!--    <item android:title="Profile">-->
+<!--        <menu>-->
+<!--            <group android:checkableBehavior="single">-->
+<!--                <item-->
+<!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
+<!--                    android:id="@+id/nav_login"-->
+<!--                    android:title="Login" />-->
+<!--                <item-->
+<!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
+<!--                    android:id="@+id/nav_profile"-->
+<!--                    android:title="Profile" />-->
+<!--                <item-->
+<!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
+<!--                    android:id="@+id/nav_logout"-->
+<!--                    android:title="Logout" />-->
+<!--            </group>-->
+<!--        </menu>-->
+<!--    </item>-->
+
+<!--    <item android:title="Categories">-->
+<!--        <menu>-->
+<!--            <group android:checkableBehavior="single">-->
+<!--                <item-->
+<!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
+<!--                    android:id="@+id/nav_restaurants"-->
+<!--                    android:title="fresh" />-->
+<!--                <item-->
+<!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
+<!--                    android:id="@+id/nav_bank"-->
+<!--                    android:title="trend" />-->
+<!--                <item-->
+<!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
+<!--                    android:id="@+id/nav_education"-->
+<!--                    android:title="collection" />-->
+<!--                </group>-->
+<!--        </menu>-->
+<!--    </item>-->
+
+</menu>

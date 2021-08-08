@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">NavBar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="silverplan">
+    <ul>
+        <li><i>1 long term</i></li>
+        <li><i>2 short term</i></li>
+        <li><i>2 intraday</i></li>
+    </ul>
+    </string>
+
+    <string name="goldplan">
+    <ul>
+        <li><i>2 long term</i></li>
+        <li><i>4 short term</i></li>
+        <li><i>4 intraday</i></li>
+    </ul>
+    </string>
+
+    <string name="platinumplan">
+    <ul>
+        <li><i>3 long term</i></li>
+        <li><i>7 short term</i></li>
+        <li><i>5 intraday</i></li>
+    </ul>
+    </string>
+</resources>
