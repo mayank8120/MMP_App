@@ -4,71 +4,76 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:icon="@drawable/ic_baseline_short_text_24"
             android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
             android:title="Home" />
         <item
-            android:icon="@drawable/ic_baseline_short_text_24"
-            android:id="@+id/nav_search"
-            android:title="Profile" />
+            android:id="@+id/nav_leaderboard"
+            android:icon="@drawable/ic_list_rank"
+            android:title="LeaderBoard" />
+
         <item
-            android:icon="@drawable/ic_baseline_short_text_24"
-            android:title="Free trial" />
+            android:id="@+id/nav_basicplan"
+            android:icon="@drawable/drawer_icon"
+            android:title="Basic Plans" />
         <item
-            android:icon="@drawable/ic_baseline_short_text_24"
-            android:id="@+id/nav_all_categories"
-            android:title="Leaderboard" />
+            android:id="@+id/nav_proplans"
+            android:icon="@drawable/drawer_icon"
+            android:title="Pro Plans" />
+
         <item
-            android:icon="@drawable/ic_baseline_short_text_24"
+            android:id="@+id/nav_referral"
+            android:icon="@drawable/ic_baseline_card_giftcard_24"
             android:title="Referrals and Rewards" />
+
+
         <item
-            android:icon="@drawable/ic_baseline_short_text_24"
-            android:title="Contact Us" />
-        <item
-            android:icon="@drawable/ic_baseline_short_text_24"
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_baseline_settings_24"
             android:title="Settings" />
         <item
-            android:icon="@drawable/ic_baseline_short_text_24"
-            android:id="@+id/nav_add_missing_place"
-            android:title="fresh" />
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/ic_baseline_call_24"
+            android:title="Contact Us" />
+
     </group>
 
-<!--    <item android:title="Profile">-->
-<!--        <menu>-->
-<!--            <group android:checkableBehavior="single">-->
-<!--                <item-->
-<!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
-<!--                    android:id="@+id/nav_login"-->
-<!--                    android:title="Login" />-->
-<!--                <item-->
-<!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
-<!--                    android:id="@+id/nav_profile"-->
-<!--                    android:title="Profile" />-->
-<!--                <item-->
-<!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
-<!--                    android:id="@+id/nav_logout"-->
-<!--                    android:title="Logout" />-->
-<!--            </group>-->
-<!--        </menu>-->
-<!--    </item>-->
+    <!--    <item android:title="Profile">-->
+    <!--        <menu>-->
+    <!--            <group android:checkableBehavior="single">-->
+    <!--                <item-->
+    <!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
+    <!--                    android:id="@+id/nav_login"-->
+    <!--                    android:title="Login" />-->
+    <!--                <item-->
+    <!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
+    <!--                    android:id="@+id/nav_profile"-->
+    <!--                    android:title="Profile" />-->
+    <!--                <item-->
+    <!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
+    <!--                    android:id="@+id/nav_logout"-->
+    <!--                    android:title="Logout" />-->
+    <!--            </group>-->
+    <!--        </menu>-->
+    <!--    </item>-->
 
-<!--    <item android:title="Categories">-->
-<!--        <menu>-->
-<!--            <group android:checkableBehavior="single">-->
-<!--                <item-->
-<!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
-<!--                    android:id="@+id/nav_restaurants"-->
-<!--                    android:title="fresh" />-->
-<!--                <item-->
-<!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
-<!--                    android:id="@+id/nav_bank"-->
-<!--                    android:title="trend" />-->
-<!--                <item-->
-<!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
-<!--                    android:id="@+id/nav_education"-->
-<!--                    android:title="collection" />-->
-<!--                </group>-->
-<!--        </menu>-->
-<!--    </item>-->
+    <!--    <item android:title="Categories">-->
+    <!--        <menu>-->
+    <!--            <group android:checkableBehavior="single">-->
+    <!--                <item-->
+    <!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
+    <!--                    android:id="@+id/nav_restaurants"-->
+    <!--                    android:title="fresh" />-->
+    <!--                <item-->
+    <!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
+    <!--                    android:id="@+id/nav_bank"-->
+    <!--                    android:title="trend" />-->
+    <!--                <item-->
+    <!--                    android:icon="@drawable/ic_baseline_short_text_24"-->
+    <!--                    android:id="@+id/nav_education"-->
+    <!--                    android:title="collection" />-->
+    <!--                </group>-->
+    <!--        </menu>-->
+    <!--    </item>-->
 
 </menu>

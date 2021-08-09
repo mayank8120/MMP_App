@@ -1,41 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:background="@color/lightwhite"
-    android:paddingLeft="15dp"
-    >
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lightwhite">
 
-    <TextView
-        android:id="@+id/menu_slogan"
-        android:layout_alignParentBottom="true"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_width="wrap_content"
-        android:text="Slogan_name" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/app_name"
-        android:layout_above="@id/menu_slogan"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Logo_name"
-        android:textColor="@color/black"
-        android:textSize="24sp" />
+        <LinearLayout
 
-    <ImageView
-        android:layout_above="@id/app_name"
-        android:layout_height="40dp"
-        android:layout_width="40dp"
-        android:src="@drawable/ic_baseline_send_24" />
+            android:id="@+id/profileopentext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal">
 
-    <ImageView
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_height="175dp"
-        android:layout_width="160dp"
-        android:src="@drawable/ic_baseline_send_24" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:elevation="18dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_person_24" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Mayank Laxkar"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="You are a free user."
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="view profile"
+                    android:textColor="#000000"
+                    android:textSize="8sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <!--            <Button-->
+            <!--                 android:id="@+id/nxtbutton"-->
+            <!--                 android:layout_width="wrap_content"-->
+            <!--                 android:layout_height="wrap_content"-->
+            <!--                 android:layout_gravity="center"-->
+            <!--                 android:drawableLeft="@drawable/ic_baseline_keyboard_arrow_right_24"-->
+            <!--                 android:background="@android:color/transparent"/>-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </RelativeLayout>
 

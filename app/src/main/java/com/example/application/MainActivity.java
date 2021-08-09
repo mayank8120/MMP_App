@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(activity_main);
 
+        getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         //Hooks
         menuIcon = findViewById(R.id.menu_icon);
         contentView = findViewById(R.id.content);
@@ -45,37 +47,41 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         naviagtionDrawer();
 
 
-
-
-
-
-
-
-        getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,new FirstFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer, new FragmentHome()).commit();
         navigationView.setCheckedItem(R.id.nav_home);
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
 
             Fragment temp;
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem)
-            {
-                switch (menuItem.getItemId())
-                {
+
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()) {
                     case R.id.nav_home:
-                        temp=new FirstFragment();
+                        temp = new FragmentHome();
                         break;
-                    case R.id.nav_search:
-                        temp=new SecondFragment();
+                    case R.id.nav_leaderboard:
+                        ;
+                        temp = new FragmentLeaderBoard();
                         break;
-                    case R.id.nav_all_categories:
-                        temp=new ThirdFragment();
+                    case R.id.nav_basicplan:
+                        temp = new FragmentBasicPlans();
+                        break;
+                    case R.id.nav_proplans:
+                        temp = new FragmentProPlans();
                         break;
 
-//                    case R.id.nav_login:
-//                        temp=new FourthFragment();
-//                        break;
+                    case R.id.nav_referral:
+                        temp = new FragmentReferrals();
+                        break;
+                    case R.id.nav_setting:
+                        temp = new FragmentSettings();
+                        break;
+                    case R.id.nav_contactus:
+                        temp = new FragmentContactUs();
+                        break;
+
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,temp).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer, temp).commit();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
             }
@@ -86,12 +92,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //                return false;
 //            }
         });
-
-
-
-
-
-
 
 
     }
@@ -155,17 +155,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return true;
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
