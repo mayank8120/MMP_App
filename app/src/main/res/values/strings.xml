@@ -11,5 +11,7 @@
 
     <string name="share">Share</string>
     <string name="rate_us">Rate Us</string>
-<!--    <color name="anyName">#00000</color>-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    <color name="anyName">#00000</color>-->
 </resources>
