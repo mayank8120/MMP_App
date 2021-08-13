@@ -59,13 +59,13 @@ public class FragmentContactUs extends Fragment {
 
 
         final TextView calltext = (TextView) view.findViewById(R.id.call_call);
-        final TextView emailtext=(TextView) view.findViewById(R.id.email_email);
+        final TextView emailtext = (TextView) view.findViewById(R.id.email_email);
 
         emailtext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                        "mailto","edwardash00@fmail.com", null));
+                        "mailto", "edwardash00@fmail.com", null));
 //                startActivity(Intent.createChooser(intent, "Choose an Email client :"));
                 startActivity(intent);
             }

@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 public class FragmentSettings extends PreferenceFragmentCompat {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        setPreferencesFromResource(R.xml.root_preferences,rootKey);
+        setPreferencesFromResource(R.xml.root_preferences, rootKey);
     }
 //
 //    // TODO: Rename parameter arguments, choose names that match

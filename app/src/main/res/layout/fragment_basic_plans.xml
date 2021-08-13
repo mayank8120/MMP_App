@@ -4,27 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentBasicPlans"
-    android:background="@color/tiger">
+    tools:context=".FragmentBasicPlans">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Basic Plans"
-        android:textColor="@color/darkblack"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="Basic Plans"-->
+    <!--        android:textColor="@color/darkblack"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold" />-->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="34dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
 
 
             <androidx.cardview.widget.CardView

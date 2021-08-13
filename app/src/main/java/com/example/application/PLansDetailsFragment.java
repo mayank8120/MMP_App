@@ -18,7 +18,7 @@ import com.google.android.material.tabs.TabLayout;
  * Use the {@link FragmentHome#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentHome extends Fragment {
+public class PLansDetailsFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,7 +35,7 @@ public class FragmentHome extends Fragment {
     ViewPager viewPager;
     TabLayout tabLayout;
 
-    public FragmentHome() {
+    public PLansDetailsFragment() {
         // Required empty public constructor
     }
 
@@ -71,10 +71,10 @@ public class FragmentHome extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        myFragment = inflater.inflate(R.layout.fragment_home, container, false);
+        myFragment = inflater.inflate(R.layout.fragment_p_lans_details, container, false);
 
-        viewPager = myFragment.findViewById(R.id.viewPager);
-        tabLayout = myFragment.findViewById(R.id.tabLayout);
+        viewPager = myFragment.findViewById(R.id.viewPagerplans);
+        tabLayout = myFragment.findViewById(R.id.tabLayoutplans);
 
         return myFragment;
 
@@ -129,9 +129,8 @@ public class FragmentHome extends Fragment {
 
     private void setUpViewPager(ViewPager viewPager) {
         SectionPagerAdapter adapter = new SectionPagerAdapter(getChildFragmentManager());
-        adapter.addFragment(new FragmentMessages(), "Messages");
-        adapter.addFragment(new FragmentNews(), "News");
-        adapter.addFragment(new FragmentTrivia(), "Trivia");
+        adapter.addFragment(new FragmentBasicPlans(), "Basic");
+        adapter.addFragment(new FragmentProPlans(), "Pro");
 
         viewPager.setAdapter(adapter);
     }

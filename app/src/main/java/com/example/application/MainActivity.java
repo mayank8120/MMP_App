@@ -60,15 +60,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         temp = new FragmentHome();
                         break;
                     case R.id.nav_leaderboard:
-                        ;
                         temp = new FragmentLeaderBoard();
                         break;
-                    case R.id.nav_basicplan:
-                        temp = new FragmentBasicPlans();
-                        break;
-                    case R.id.nav_proplans:
-                        temp = new FragmentProPlans();
-                        break;
+//                    case R.id.nav_basicplan:
+//                        temp = new FragmentBasicPlans();
+//                        break;
+//                    case R.id.nav_proplans:
+//                        temp = new FragmentProPlans();
+//                        break;
 
                     case R.id.nav_referral:
                         temp = new FragmentReferrals();
@@ -78,6 +77,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         break;
                     case R.id.nav_contactus:
                         temp = new FragmentContactUs();
+                        break;
+                    case R.id.nav_plansinfo:
+                        temp = new PLansDetailsFragment();
                         break;
 
                 }

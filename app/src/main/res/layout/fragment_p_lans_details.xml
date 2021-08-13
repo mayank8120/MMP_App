@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentHome">
+    tools:context=".PLansDetailsFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -26,14 +26,14 @@
             <!--                android:textSize="30sp" />-->
 
             <com.google.android.material.appbar.AppBarLayout
-                android:id="@+id/appBarLayout"
+                android:id="@+id/appBarLayoutplans"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
                 app:elevation="0dp">
 
                 <com.google.android.material.tabs.TabLayout
-                    android:id="@+id/tabLayout"
+                    android:id="@+id/tabLayoutplans"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -42,7 +42,7 @@
             </com.google.android.material.appbar.AppBarLayout>
 
             <androidx.viewpager.widget.ViewPager
-                android:id="@+id/viewPager"
+                android:id="@+id/viewPagerplans"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 

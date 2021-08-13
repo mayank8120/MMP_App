@@ -11,15 +11,19 @@
             android:id="@+id/nav_leaderboard"
             android:icon="@drawable/ic_list_rank"
             android:title="LeaderBoard" />
+        <item
+            android:id="@+id/nav_plansinfo"
+            android:icon="@drawable/ic_baseline_analytics_24"
+            android:title="Plans Info" />
 
-        <item
-            android:id="@+id/nav_basicplan"
-            android:icon="@drawable/drawer_icon"
-            android:title="Basic Plans" />
-        <item
-            android:id="@+id/nav_proplans"
-            android:icon="@drawable/drawer_icon"
-            android:title="Pro Plans" />
+        <!--        <item-->
+        <!--            android:id="@+id/nav_basicplan"-->
+        <!--            android:icon="@drawable/drawer_icon"-->
+        <!--            android:title="Basic Plans" />-->
+        <!--        <item-->
+        <!--            android:id="@+id/nav_proplans"-->
+        <!--            android:icon="@drawable/drawer_icon"-->
+        <!--            android:title="Pro Plans" />-->
 
         <item
             android:id="@+id/nav_referral"
