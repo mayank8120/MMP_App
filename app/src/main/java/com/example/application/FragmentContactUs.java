@@ -1,5 +1,7 @@
 package com.example.application;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -17,6 +20,8 @@ public class FragmentContactUs extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+
+
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
@@ -28,15 +33,6 @@ public class FragmentContactUs extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FragmentContactUs.
-     */
-    // TODO: Rename and change types and number of parameters
     public static FragmentContactUs newInstance(String param1, String param2) {
         FragmentContactUs fragment = new FragmentContactUs();
         Bundle args = new Bundle();
@@ -58,7 +54,36 @@ public class FragmentContactUs extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_contact_us, container, false);
+
+
+        final TextView calltext = (TextView) view.findViewById(R.id.call_call);
+        final TextView emailtext=(TextView) view.findViewById(R.id.email_email);
+
+        emailtext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                        "mailto","edwardash00@fmail.com", null));
+//                startActivity(Intent.createChooser(intent, "Choose an Email client :"));
+                startActivity(intent);
+            }
+        });
+
+
+        calltext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:6264204218"));
+                startActivity(callIntent);
+            }
+        });
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_contact_us, container, false);
+        return view;
     }
 }
