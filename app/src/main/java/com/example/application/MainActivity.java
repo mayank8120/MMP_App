@@ -8,12 +8,15 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -23,10 +26,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     ImageView menuIcon;
     LinearLayout contentView;
+    TextView viewprofile;
 
     //Drawer Menu
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +48,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //Menu Hooks
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigation_view);
+
+//        TextView
+//        viewprofile = (TextView) findViewById(R.id.viewProfileTV);
+
+        View headView=navigationView.getHeaderView(0);
+        TextView gotoprofile=headView.findViewById(R.id.viewProfileTV);
+
+
+        gotoprofile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,ProfileActivity.class);
+                startActivity(intent);
+//                Toast.makeText(MainActivity.this, "hello", Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
         naviagtionDrawer();
 
